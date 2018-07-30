@@ -1,0 +1,26 @@
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.label {
+    background: none !important;
+    color: black !important;
+}
+
+
+.form-field{
+    position: relative;
+    margin-left: 5px !important;
+}
+
+.ui.basic.red.label {
+    position: absolute;
+    top: 90%;
+    right: 0%;
+    width: 100%;
+    border-color: red !important;
+    color: red!important;
+    background-color: white !important;
+    background-color: white;
+}

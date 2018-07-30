@@ -1,0 +1,28 @@
+.chat {
+    height: 100%;
+}
+
+.message-box {
+    height: 100%;
+}
+
+.ui.basic.green.label {
+    color: black !important;
+    border-color: teal !important;
+    background-color: white !important
+}
+
+.msg-user {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.msg-item {
+    display: flex !important;
+}
+
+.msg-time{
+    font-size: 10px;
+    font-style: initial;
+    float: right;
+}
