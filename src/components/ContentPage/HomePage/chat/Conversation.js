@@ -5,7 +5,7 @@ class Conversation extends Component {
     render() {
         return (
             <List.Item>
-                <List.Icon name='comment' size='large' verticalAlign='middle' />
+                <Image avatar src='/images/avatar.jpg' />
                 <List.Content>
                     <List.Header as='a'> Hong Hanh </List.Header>
                     <List.Description as='a'>Message....</List.Description>

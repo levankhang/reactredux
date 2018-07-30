@@ -9,26 +9,25 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 
 
-const ContentPage = ({isAuthenticated}) => {
+const ContentPage = ({isLoggedIn}) => {
     return (
         <Container className="content-page">
-            {isAuthenticated && <HomePage/>}
-            {!isAuthenticated && <RegisterPage/>}
+            {isLoggedIn && <HomePage/>}
+            {!isLoggedIn && <RegisterPage/>}
         </Container>
     )
 
 }
 
 ContentPage.propTypes = {
-    isAuthenticated: PropTypes.bool.isRequired
+    isLoggedIn: PropTypes.bool.isRequired
 }
 
 function mapStateToProp(state){
     return {
-        isAuthenticated: !!state.user.email
+        isLoggedIn: !!state.user._id
     }
 }
 
 export default connect(mapStateToProp)(ContentPage)
 
-// mapState to prop isAuthenticate

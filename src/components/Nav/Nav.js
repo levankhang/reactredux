@@ -12,12 +12,13 @@ import { login } from '../../actions/auth'
 class Nav extends Component {
     constructor(props){
         super(props)
-
     }
 
     submit = (data) => this.props.login(data).then(() => console.log('Logged in'))
 
     render() {
+        const { isLoggedIn, user } = this.props;
+
         return (
             <Menu secondary>
                 <Menu.Item>
@@ -26,9 +27,11 @@ class Nav extends Component {
 
                 <Menu.Menu position="right">
                     <Menu.Item>
-                      { !!this.props.user.email && <UserLoggedIn user={this.props.user}/>}
-                      { !this.props.user.email && <LoginForm submit={this.submit}/>}
+                      { isLoggedIn && <UserLoggedIn user={user}/>}
+                      { !isLoggedIn && <LoginForm submit={this.submit}/>}
                     </Menu.Item>
+
+                    
 
                 </Menu.Menu>
             </Menu>
@@ -37,7 +40,8 @@ class Nav extends Component {
 }
 
 Nav.propTypes = {
-    user: PropTypes.object
+    user: PropTypes.object,
+    isLoggedIn: PropTypes.bool.isRequired
 }
 
 function mapStateToProp(state){
@@ -48,6 +52,4 @@ function mapStateToProp(state){
 
 
 
-export default connect(mapStateToProp, {login})(Nav)
-
-// map state to props user
+export default connect(mapStateToProp, { login })(Nav)

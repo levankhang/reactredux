@@ -1,9 +1,14 @@
 
 .home-page {
-    height: 100%;
-}
-/* 
-.home-column {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
     overflow: hidden;
-} */
+    position: relative;
+}
+
+.home-column {
+    height: 100% !important;
+    overflow: hidden;
+}
 

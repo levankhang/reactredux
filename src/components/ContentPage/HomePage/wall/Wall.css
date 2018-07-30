@@ -1,0 +1,33 @@
+.wall-container{
+    margin: 0 !important;
+    height: 100% !important;
+    overflow: auto;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+
+.post-list {
+    width: 100% !important;
+}
+
+.post-item{
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px !important;
+}
+
+.post-comment-area{
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 100%;
+    resize: vertical;
+}

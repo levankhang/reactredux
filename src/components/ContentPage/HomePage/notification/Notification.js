@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
-import { Container, List } from 'semantic-ui-react'
+import { List } from 'semantic-ui-react'
 import NotificationItem from './NotificationItem'
+import './Notification.css'
 
 class Notification extends Component {
     render() {
         return (
-            <Container style={{ height: '100%', overflow: 'hidden'}}>
+            <div className="notification-container">
                 <h3>Notifications</h3>
 
-                <List relaxed style={{ height: '85%', overflow: 'auto'}}>
+                <List relaxed className="notification-list">
                     <NotificationItem />
                     <NotificationItem />
                     <NotificationItem />
@@ -22,7 +23,7 @@ class Notification extends Component {
                     <NotificationItem />
                     <NotificationItem />
                 </List>
-            </Container>
+            </div>
         )
     }
 }

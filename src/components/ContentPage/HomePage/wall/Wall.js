@@ -6,16 +6,16 @@ import Post from './Post'
 class Wall extends Component{
     render(){
         return(
-            <Container style={{height: '90%', overflow: 'auto', padding: '5px'}}>
+            <div className="wall-container">
                 <h3>Wall</h3>
                 <PostForm/>
 
-                <List style={{width: '100%'}}>
+                <List className="post-list">
                     <Post/>
                     <Post/>
                 </List>
 
-            </Container>
+            </div>
         )
     }
 }

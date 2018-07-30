@@ -1,0 +1,13 @@
+.notification-container {
+    margin: 0 !important;
+    height: 100% !important;
+    overflow: hidden;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-list {
+    flex: 1;
+    overflow: auto;
+}

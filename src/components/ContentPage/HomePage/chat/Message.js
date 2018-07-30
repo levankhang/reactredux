@@ -5,18 +5,16 @@ import './Chat.css'
 class Message extends Component {
     render() {
         return (
-            <List.Item style={{width: '100%'}} className="msg-item">
-                <Label  image className="msg-user">
-                    <img src='/images/avatar.jpg'/>
-                    Le Van Khang   
-                </Label>
+            <List.Item className="message-item">
+                <div className="msg-user">
+                    <img src="images/avatar.jpg"/>
+                    <div>
+                        <h5>Le Van Khang </h5>
+                        <p>10h40 pm</p>
+                    </div>
+                </div>
 
-                <List.Content >
-                    <Label basic color="green" pointing='left'>
-                        Hello my friend i am a good good good good good good good good good good:)
-                    </Label>
-                    <span className="msg-time">13h55</span>
-                </List.Content>                
+                <p>message message message message message message message message message message message message </p>
             </List.Item>
         )
     }

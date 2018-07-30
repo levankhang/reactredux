@@ -3,9 +3,16 @@
     width: auto;
 }
 
+/* user logged in label */
 .label {
     background: none !important;
     color: black !important;
+}
+
+/* login form */
+.login-form {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -14,7 +21,7 @@
     margin-left: 5px !important;
 }
 
-.ui.basic.red.label {
+.ui.basic.label {
     position: absolute;
     top: 90%;
     right: 0%;

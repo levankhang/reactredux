@@ -8,13 +8,9 @@ class SideMenu extends Component {
         return (
             <Menu className="sidemenu" vertical>
                 <Menu.Item>
-                    <div className="ui grid centered">
-                        <div className="row">
-                            <img src="/images/avatar.jpg" className="ui image" />
-                        </div>
-                        <div className="row">
-                            <h2>Khang Le</h2>
-                        </div>
+                    <div className="user-item">
+                        <img src="/images/avatar.jpg" className="ui image" />
+                        <h3>Khang Le</h3>
                     </div>
                 </Menu.Item>
 
@@ -22,13 +18,6 @@ class SideMenu extends Component {
                     <Menu.Menu>
                         <Menu.Item>Wall</Menu.Item>
                         <Menu.Item>Friends</Menu.Item>
-
-                        <Dropdown item text='Account'>
-                            <Dropdown.Menu>
-                                <Dropdown.Item icon='edit' text='Edit Profile' />
-                                <Dropdown.Item icon='sign out alternate' text='Logout' />
-                            </Dropdown.Menu>
-                        </Dropdown>
 
                     </Menu.Menu>
                 </Menu.Item>

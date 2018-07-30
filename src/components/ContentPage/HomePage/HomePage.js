@@ -9,15 +9,15 @@ import Notification from './notification/Notification'
 class HomePage extends Component{
     render(){
         return(
-            <Grid className="ui container grid home-page">
+            <Grid className="home-page">
                 <Grid.Column className="home-column" width={4}>
                     <SideMenu/>
                 </Grid.Column>
 
                  <Grid.Column className="home-column" width={12}>
                     {false && <Notification/>}
-                    {true && <Chat/>}
-                    {false && <Wall/>}
+                    {false && <Chat/>}
+                    {true && <Wall/>}
                 </Grid.Column>
             </Grid>
         )

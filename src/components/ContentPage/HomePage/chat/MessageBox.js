@@ -1,37 +1,50 @@
 import React, { Component } from 'react'
 import Message from './Message'
-import {Grid, TextArea, Form, List } from 'semantic-ui-react'
+import { Grid, TextArea, Form, List } from 'semantic-ui-react'
+import './Chat.css'
 
 
 class MessageBox extends Component {
     render() {
         return (
-            <Grid className="message-box">
-                <Grid.Row verticalAlign="top" style={{height: '10%'}}>
-                    <h3>User name</h3>
-                </Grid.Row>
+            <div className="message-box-container">
 
-                <Grid.Row style={{height: '70%', overflow: 'auto'}}>
-                    <List style={{width: '98%'}}>
-                        <Message />
-                        <Message />
-                        <Message />
-                        <Message />
-                        <Message />
-                        <Message />
-                        <Message />
-                        <Message />
-                        <Message />
-                    </List>
-                </Grid.Row>
+                <h4>User name</h4>
 
-                <Grid.Row verticalAlign="bottom" style={{height: '20%'}}>
-                    <Form style={{width: '100%'}}>
-                        <TextArea style={{width: '100%', resize: 'none'}} spellCheck="false"></TextArea>
-                    </Form>
-                </Grid.Row>
-               
-            </Grid>
+                <List style={{ overflow: 'auto', flexGrow: '1'}}>
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                    <Message />
+                 
+                </List>
+
+                <Form style={{marginBottom: 'auto'}}>
+                    <Form.Field>
+                        <TextArea spellCheck="false"></TextArea>
+                    </Form.Field>
+                </Form>
+
+
+            </div>
         )
     }
 }

@@ -9,12 +9,11 @@ class Chat extends Component {
         return (
 
             <Grid className="chat">
-                <Grid.Column width={6}>
-                    <h4>Conversations</h4>
+                <Grid.Column width={6} className="chat-column">
                     <Conversations/>
                 </Grid.Column>
 
-                <Grid.Column width={10}>
+                <Grid.Column width={10} className="chat-column">
                     <MessageBox/>
                 </Grid.Column>
 
